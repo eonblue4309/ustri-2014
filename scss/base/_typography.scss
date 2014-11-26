@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: $darkgrey;
+
+  @include breakpoint(smaller) {
+    font-size: 16px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 1.3em;
+
+  @include breakpoint(smaller) {
+    font-size: 1.5em;
+  }
+
+  @include breakpoint(big) {
+    font-size: 1.5em;
+  }
+}
+
+h2 {
+  font-size: 1.25em;
+
+  @include breakpoint(smaller) {
+    font-size: 1.45em;
+  }
+}
+
+h3 {
+  font-size: 1.20em;
+
+  @include breakpoint(smaller) {
+    font-size: 1.5em;
+  }
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 { 
+  font-size: 1.1em;
+}
+
+h6 {
+  font-size: 1.05em;
+}
+
+.logo {
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: $letter-spacing;
+}

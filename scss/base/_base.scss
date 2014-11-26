@@ -1,0 +1,16 @@
+body {
+  background-color: $darkgrey;
+}
+
+[href^="mailto"]:before {
+  content: "email: ";
+}
+
+html {
+  box-sizing: border-box;
+  min-width: 300px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

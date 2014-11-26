@@ -1,0 +1,60 @@
+.entry-header,
+.page-content-header {
+  background-color: $darkgrey;
+  color: white;
+
+  h1 {
+    display: inline-block;
+  }
+
+  @media (min-width: 635px) {
+    font-size: 1.2em;
+  }
+
+
+}
+
+.site-content {
+  background-image: url("../img/dark_wood.png");
+  padding-bottom: 2.5em;
+}
+
+.post,
+.page-content {
+  border-top: $generic-section-border;
+  border-bottom: $generic-section-border;
+  background-image: url("../img/cardboard_flat.png");
+  margin: 2.5em auto;
+  max-width: $max-width;
+
+  @include breakpoint(smaller) {
+    border: $generic-section-border
+  }
+}
+
+.content {
+    a {
+    color: $darkgrey;
+
+    &:hover {
+      color: white;
+      background-color: $darkgrey;
+    }
+  }
+  
+  li {
+    padding: 0.25em 0;
+  }
+}
+
+.recommended-reading {
+  .title {
+    font-style: italic;
+  }
+
+  .author {
+    &:before {
+      content: " -";
+    }
+  }
+}

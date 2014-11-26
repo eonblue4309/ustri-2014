@@ -1,0 +1,30 @@
+.entry-title {
+  a {
+    padding: 0.5em;
+    display: block;
+    color: white;
+    &:hover {
+      color: $darkgrey;
+      background-color: white;
+    }
+  }
+}
+
+h1.entry-title {
+  padding: 0.5em
+}
+
+.content .post-title {
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+
+  &:hover {
+    color: $darkgrey;
+    background-color: transparent;
+    border-bottom-color: $darkgrey;
+  }
+}
+
+.entry-content {
+  margin: 0;
+}

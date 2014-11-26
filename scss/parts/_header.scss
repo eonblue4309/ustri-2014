@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  color: white;
+  padding: 0.3em 0 0.3em 0.3em;
+
+  @include breakpoint(big) {
+    font-size: 2em;
+  }
+
+  @include breakpoint(bigger) {
+    font-size: 2.5em;
+  }
+}
+
+.logo-group {
+  padding: 0 0 0 3.3em;
+  background: url(../img/kikyo-true-white.png) no-repeat;
+  background-size: contain;
+}
+
+.site-header {
+  background-color: rgba($darkgrey,1);
+  border-bottom: $generic-section-border
+}
+
+.site-branding {
+  max-width: $max-width;
+  margin: auto;
+}

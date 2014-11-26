@@ -1,0 +1,15 @@
+.site-footer {
+  color: white;
+  background-color: $darkgrey;
+  width: 100%;
+  border-top: 0.2em solid white;
+
+  a {
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $darkgrey;
+    }
+  }
+}

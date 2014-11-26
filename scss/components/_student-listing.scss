@@ -1,0 +1,16 @@
+.student-listing {
+
+  @include breakpoint(smaller) {
+    .column-2 {
+      float: left;
+      width: 48%;
+    }
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}

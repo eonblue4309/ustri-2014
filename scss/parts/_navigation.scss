@@ -1,0 +1,96 @@
+.navigation {
+  a {
+    color: white;
+  }
+}
+
+.main-navigation {
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+      padding: 0.5em;
+      display: block;
+
+      @include breakpoint(smaller) {
+        padding: 1em;
+        font-size: 1em;
+      }
+
+      @include breakpoint(big) {
+        font-size: 1.1em;
+      }
+
+      @include breakpoint(bigger) {
+        font-size: 1.3em;
+    }
+  }
+
+  .current-menu-item,
+  .current-page-ancestor {
+    font-style: italic;
+  }
+
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+
+  .home-link {
+    border-bottom: 4px solid transparent;
+  }
+
+  &:hover {
+    .home-link {
+      border-bottom-color: white;
+    }
+  }
+}
+
+.page-links {
+  clear: none;
+  margin: 0;
+
+  a:hover {
+    color: $darkgrey;
+    background-color: white;
+  }
+}
+
+.child-nav {
+  display: inline-block;
+}
+
+.child-nav-list {
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    a {
+      display: block;
+      padding: 0.5em;
+
+      @include breakpoint(smaller) {
+        padding: 1em;
+      }
+    }
+  }
+}
+
+.post-navigation {
+  margin: 2.5em auto;
+  max-width: 1100px;
+
+  a {
+    padding: 1em;
+    &:hover {
+      background-color: white;
+      color: $darkgrey;
+    }
+  }
+}
