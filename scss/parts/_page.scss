@@ -1,17 +1,37 @@
-.entry-header,
-.page-content-header {
+// .entry-header,
+// .page-content-header {
+//   background-color: $darkgrey;
+//   color: white;
+
+//   h1 {
+//     display: inline-block;
+//   }
+
+//   @media (min-width: 635px) {
+//     font-size: 1.2em;
+//   }
+
+// }
+
+%header {
   background-color: $darkgrey;
   color: white;
+  padding: 0.5em;
+}
 
-  h1 {
-    display: inline-block;
+.page-header {
+  @extend %header;
+}
+.entry-header {
+  @extend %header;
+
+  a {
+    color: white;
+    &:hover {
+      color: $darkgrey;
+      background-color: white;
+    }
   }
-
-  @media (min-width: 635px) {
-    font-size: 1.2em;
-  }
-
-
 }
 
 .site-content {
@@ -29,21 +49,6 @@
 
   @include breakpoint(smaller) {
     border: $generic-section-border
-  }
-}
-
-.content {
-    a {
-    color: $darkgrey;
-
-    &:hover {
-      color: white;
-      background-color: $darkgrey;
-    }
-  }
-  
-  li {
-    padding: 0.25em 0;
   }
 }
 

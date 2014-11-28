@@ -6,14 +6,12 @@
 <?php 
 $categories_list = get_the_category_list( __( ', ', 'ustri-2014' ) );
 ?>
-
+<!--this is content.php-->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title">
-		<?php echo $categories_list; ?>
-		</h1>
 
-	</header><!-- .entry-header -->
+	<header class="entry-header">
+    <h1><?php echo $categories_list; ?></h1>
+  </header>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
@@ -31,38 +29,5 @@ $categories_list = get_the_category_list( __( ', ', 'ustri-2014' ) );
 		?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
-
-	<?php /*
-	<footer class="entry-meta">
-		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
-			<?php
-				// translators: used between list items, there is a space after the comma
-				$categories_list = get_the_category_list( __( ', ', 'ustri-2014' ) );
-				if ( $categories_list && ustri_2014_categorized_blog() ) :
-			?>
-			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'ustri-2014' ), $categories_list ); ?>
-			</span>
-			<?php endif; // End if categories ?>
-
-			<?php
-				// translators: used between list items, there is a space after the comma
-				$tags_list = get_the_tag_list( '', __( ', ', 'ustri-2014' ) );
-				if ( $tags_list ) :
-			?>
-			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', 'ustri-2014' ), $tags_list ); ?>
-			</span>
-			<?php endif; // End if $tags_list ?>
-		<?php endif; // End if 'post' == get_post_type() ?>
-		*/ ?>
-
-		<?php /*
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'ustri-2014' ), __( '1 Comment', 'ustri-2014' ), __( '% Comments', 'ustri-2014' ) ); ?></span>
-		<?php endif; ?>
-		*/ ?>
-
-		<?php //edit_post_link( __( 'Edit', 'ustri-2014' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

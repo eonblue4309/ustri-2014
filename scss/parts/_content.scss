@@ -1,7 +1,34 @@
 .content {
   padding: 1em 1em;
 
-  @include breakpoint(smaller) {
+  h1 {
+    font-size: 1.3em;
+    padding: 0.5em 0;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    padding: 0.25em 0;
+  }
+
+  .sub-section {
+    margin-bottom: 5em;
+  }
+
+  a {
+    color: $darkgrey;
+
+    &:hover {
+      color: white;
+      background-color: $darkgrey;
+    }
+  }
+  
+  li {
+    padding: 0.25em 0;
+  }
+
+    @include breakpoint(smaller) {
     padding: 1em 2em;
 
     h1 {
@@ -23,17 +50,4 @@
     padding: 1em 10em;
   }
 
-  h1 {
-    font-size: 1.3em;
-    padding: 0.5em 0;
-  }
-
-  h2 {
-    font-size: 1.25em;
-    padding: 0.25em 0;
-  }
-
-  .sub-section {
-    margin-bottom: 5em;
-  }
 }

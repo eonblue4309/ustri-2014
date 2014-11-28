@@ -5,11 +5,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-
-		<div class="entry-meta">
-			<?php //ustri_2014_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<h1><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content content">

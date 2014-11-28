@@ -6,7 +6,8 @@
  *
  * @package ustri-2014
  */
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -16,7 +17,16 @@
 
 <?php wp_head(); ?>
 </head>
+<?php
 
+$this_page_name = get_the_title();
+$children = wp_list_pages( array(
+  'title_li' => '',
+  'child_of' => $post->ID,
+  'echo' => 0
+) );
+
+?>
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
@@ -35,9 +45,12 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation navigation page-links" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 
-                                'container_class' => 'group main-menu-main-container' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
+      <ul id="menu-child" class="menu-child-nav">
+        <?php $parentid = $post->post_parent > 0 ? $post->post_parent : $post->ID; ?>
+        <?php wp_list_pages(array('child_of' => $parentid, 'title_li' => __(''))); ?>
+      </ul>
+    </nav>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -30,8 +30,16 @@
   }
 
   .current-menu-item,
+  .current_page_item,
   .current-page-ancestor {
     font-style: italic;
+  }
+
+  .menu-child-nav {
+    a {
+      font-size: 1em;
+      padding: 0.5em;
+    }
   }
 
 }
@@ -65,22 +73,22 @@
   display: inline-block;
 }
 
-.child-nav-list {
-  margin: 0;
-  list-style: none;
+// .child-nav-list {
+//   margin: 0;
+//   list-style: none;
 
-  li {
-    display: inline-block;
-    a {
-      display: block;
-      padding: 0.5em;
+//   li {
+//     display: inline-block;
+//     a {
+//       display: block;
+//       padding: 0.5em;
 
-      @include breakpoint(smaller) {
-        padding: 1em;
-      }
-    }
-  }
-}
+//       @include breakpoint(smaller) {
+//         padding: 1em;
+//       }
+//     }
+//   }
+// }
 
 .post-navigation {
   margin: 2.5em auto;
