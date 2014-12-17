@@ -19,8 +19,12 @@
 }
 
 .site-header {
-  background-color: rgba($darkgrey,1);
-  border-bottom: $generic-section-border
+  background-image:linear-gradient( rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5) ), url('../img/honbu-wide.jpg');
+  background-size: cover;
+  background-position: center 28%;
+  border-bottom: $generic-section-border;
+  padding-top: 4em;
+  padding-bottom: 3em;
 }
 
 .site-branding {
