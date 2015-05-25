@@ -558,6 +558,20 @@ object {
     background: white;
     color: #202020; }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -727,7 +741,7 @@ h1.entry-title {
   .main-navigation .current-page-ancestor {
     font-style: italic; }
   .main-navigation .menu-child-nav {
-    display: block;
+    display: inline-block;
     height: 2.4em; }
     .main-navigation .menu-child-nav a {
       font-size: 1em;
