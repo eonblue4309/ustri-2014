@@ -45,10 +45,11 @@ $children = wp_list_pages( array(
 		</div>
 
 		<nav id="site-navigation" class="main-navigation navigation page-links" role="navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'depth' => 1) ); ?>
       <ul id="menu-child" class="menu-child-nav">
-        <?php $parentid = $post->post_parent > 0 ? $post->post_parent : $post->ID; ?>
+        <?php $parentid = $post->post_parent > 0 ? $post->post_parent : $post->ID;?>
         <?php wp_list_pages(array('child_of' => $parentid, 'title_li' => __(''))); ?>
+        <?php if (is_home() || is_category()) { wp_list_categories(array('title_li' => '')); }?> 
       </ul>
     </nav>
 	</header><!-- #masthead -->

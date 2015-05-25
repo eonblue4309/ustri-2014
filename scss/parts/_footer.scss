@@ -1,8 +1,8 @@
 .site-footer {
   color: white;
   background-color: $darkgrey;
-  width: 100%;
   border-top: 0.2em solid white;
+  padding: 4em 0;
 
   a {
     color: white;
@@ -12,4 +12,36 @@
       color: $darkgrey;
     }
   }
+}
+
+.site-info {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    display: block;
+    margin: 2.5em 0;
+
+    @media (min-width: 605px) {
+      text-align: left;
+      float: left;
+      width: 25%;
+    }
+
+    li {
+      display: inline-block;
+      width: 100%;  
+    }
+
+    a {
+      padding: 1em 2em;
+      margin: 0 0 1em 0;
+      display: inline-block;
+    }
+  }
+
 }

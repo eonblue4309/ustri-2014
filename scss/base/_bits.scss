@@ -30,3 +30,25 @@ $generic-section-border: 3px solid white;
   display: table;
   clear: both;
 }
+
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  background: $darkgrey;
+  color: white;
+  padding: 1em 2em;
+
+  &:active,
+  &:visited {
+    background: $darkgrey;
+    color: white;
+  }
+
+  &:hover,
+  &:focus {
+    background: white;
+    color: $darkgrey;
+  }
+}

@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 /*
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
@@ -7,7 +6,7 @@ and Blueprint http://www.blueprintcss.org/
 */
 /* =Reset
 -------------------------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000312}}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,10 +23,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   outline: 0;
   padding: 0;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000330}}
 html {
   font-size: 62.5%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
@@ -36,10 +33,8 @@ html {
   -webkit-text-size-adjust: 100%;
   /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
   -ms-text-size-adjust: 100%;
-  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-}
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000336}}
 *,
 *:before,
 *:after {
@@ -48,15 +43,11 @@ html {
   /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
   -moz-box-sizing: border-box;
   /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000343}}
 body {
-  background: #fff;
-}
+  background: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000346}}
 article,
 aside,
 details,
@@ -67,57 +58,39 @@ header,
 main,
 nav,
 section {
-  display: block;
-}
+  display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000358}}
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000361}}
 table {
   /* tables still need 'cellspacing="0"' in the markup */
   border-collapse: separate;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000365}}
 caption, th, td {
   font-weight: normal;
-  text-align: left;
-}
+  text-align: left; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000369}}
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-}
+  content: ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000373}}
 blockquote, q {
-  quotes: "" "";
-}
+  quotes: "" ""; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000376}}
 a:focus {
-  outline: thin dotted;
-}
+  outline: thin dotted; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000379}}
 a:hover,
 a:active {
-  outline: 0;
-}
+  outline: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000383}}
 a img {
-  border: 0;
-}
+  border: 0; }
 
 /* =Global
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\0000391}}
 body,
 button,
 input,
@@ -127,82 +100,54 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.5;
-}
+  line-height: 1.5; }
 
 /* Headings */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003104}}
 h1, h2, h3, h4, h5, h6 {
-  clear: both;
-}
+  clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003107}}
 hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
 /* Text elements */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003115}}
 p {
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003118}}
 ul, ol {
-  margin: 0 0 1.5em 3em;
-}
+  margin: 0 0 1.5em 3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003121}}
 ul {
-  list-style: disc;
-}
+  list-style: disc; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003124}}
 ol {
-  list-style: decimal;
-}
+  list-style: decimal; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003127}}
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em;
-}
+  margin-left: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003132}}
 dt {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003135}}
 dd {
-  margin: 0 1.5em 1.5em;
-}
+  margin: 0 1.5em 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003138}}
 b, strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003141}}
 dfn, cite, em, i {
-  font-style: italic;
-}
+  font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003144}}
 blockquote {
-  margin: 0 1.5em;
-}
+  margin: 0 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003147}}
 address {
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003150}}
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -212,81 +157,55 @@ pre {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em;
-}
+  padding: 1.6em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003161}}
 code, kbd, tt, var {
-  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003164}}
 abbr, acronym {
   border-bottom: 1px dotted #666;
-  cursor: help;
-}
+  cursor: help; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003168}}
 mark, ins {
   background: #fff9c0;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003172}}
 sup,
 sub {
   font-size: 75%;
   height: 0;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003180}}
 sup {
-  bottom: 1ex;
-}
+  bottom: 1ex; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003183}}
 sub {
-  top: .5ex;
-}
+  top: .5ex; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003186}}
 small {
-  font-size: 75%;
-}
+  font-size: 75%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003189}}
 big {
-  font-size: 125%;
-}
+  font-size: 125%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003192}}
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003195}}
 table {
   margin: 0 0 1.5em;
-  width: 100%;
-}
+  width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003199}}
 th {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003202}}
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */
-}
+  /* Adhere to container width. */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003206}}
 button,
 input,
 select,
@@ -298,10 +217,8 @@ textarea {
   vertical-align: baseline;
   /* Improves appearance and consistency in all browsers */
   *vertical-align: middle;
-  /* Improves appearance and consistency in all browsers */
-}
+  /* Improves appearance and consistency in all browsers */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003215}}
 button,
 input[type="button"],
 input[type="reset"],
@@ -320,19 +237,15 @@ input[type="submit"] {
   font-size: 1.2rem;
   line-height: 1;
   padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
-}
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003233}}
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa #bbb;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-}
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003240}}
 button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -342,41 +255,31 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
   border-color: #aaa #bbb #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-}
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003251}}
 input[type="checkbox"],
 input[type="radio"] {
   padding: 0;
-  /* Addresses excess padding in IE8/9 */
-}
+  /* Addresses excess padding in IE8/9 */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003255}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
   -webkit-box-sizing: content-box;
   /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
   -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003261}}
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003264}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003269}}
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -385,86 +288,64 @@ input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003279}}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  color: #111;
-}
+  color: #111; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003287}}
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px;
-}
+  padding: 3px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003294}}
 textarea {
   overflow: auto;
   /* Removes default vertical scrollbar in IE6/7/8/9 */
   padding-left: 3px;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
-  width: 98%;
-}
+  width: 98%; }
 
 /* Links */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003302}}
 a {
-  color: royalblue;
-}
+  color: royalblue; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003305}}
 a:visited {
-  color: purple;
-}
+  color: purple; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003308}}
 a:hover,
 a:focus,
 a:active {
-  color: midnightblue;
-}
+  color: midnightblue; }
 
 /* Alignment */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003315}}
 .alignleft {
   display: inline;
   float: left;
-  margin-right: 1.5em;
-}
+  margin-right: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003320}}
 .alignright {
   display: inline;
   float: right;
-  margin-left: 1.5em;
-}
+  margin-left: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003325}}
 .aligncenter {
   clear: both;
   display: block;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /* Text meant only for screen readers */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003332}}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-}
+  position: absolute !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003337}}
 .screen-reader-text:hover,
 .screen-reader-text:active,
 .screen-reader-text:focus {
@@ -484,11 +365,9 @@ a:active {
   top: 5px;
   width: auto;
   z-index: 100000;
-  /* Above WP toolbar */
-}
+  /* Above WP toolbar */ }
 
 /* Clearing */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003359}}
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -502,48 +381,36 @@ a:active {
 .site-footer:before,
 .site-footer:after {
   content: '';
-  display: table;
-}
+  display: table; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003375}}
 .clear:after,
 .entry-content:after,
 .comment-content:after,
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-  clear: both;
-}
+  clear: both; }
 
 /* =Menu
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003388}}
 .main-navigation {
   clear: both;
   display: block;
   float: left;
-  width: 100%;
-}
+  width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003394}}
 .main-navigation ul {
   list-style: none;
   margin: 0;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003399}}
 .main-navigation li {
-  position: relative;
-}
+  position: relative; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003403}}
 .main-navigation a {
   display: block;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003407}}
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   display: none;
@@ -551,616 +418,431 @@ a:active {
   left: 0;
   position: absolute;
   top: 4 em;
-  z-index: 99999;
-}
+  z-index: 99999; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003416}}
 .main-navigation ul ul ul {
   left: 100%;
-  top: 0;
-}
+  top: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003431}}
 .main-navigation ul li:hover > ul {
-  display: block;
-}
+  display: block; }
 
 /* =Content
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003461}}
 .hentry {
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003464}}
 .byline,
 .updated {
-  display: none;
-}
+  display: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003468}}
 .single .byline,
 .group-blog .byline {
-  display: inline;
-}
+  display: inline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003472}}
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
-}
+  margin: 1.5em 0 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003477}}
 .page-links {
   clear: both;
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 /* =Asides
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003486}}
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-  display: none;
-}
+  display: none; }
 
 /* =Media
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003495}}
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
   border: none;
   margin-bottom: 0;
   margin-top: 0;
-  padding: 0;
-}
+  padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003503}}
 .wp-caption {
   border: 1px solid #ccc;
   margin-bottom: 1.5em;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003508}}
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 1.2% auto 0;
-  max-width: 98%;
-}
+  max-width: 98%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003513}}
 .wp-caption-text {
-  text-align: center;
-}
+  text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003516}}
 .wp-caption .wp-caption-text {
-  margin: 0.8075em 0;
-}
+  margin: 0.8075em 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003519}}
 .site-main .gallery {
-  margin-bottom: 1.5em;
-}
+  margin-bottom: 1.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003524}}
 .site-main .gallery a img {
   border: none;
   height: auto;
-  max-width: 90%;
-}
+  max-width: 90%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003529}}
 .site-main .gallery dd {
-  margin: 0;
-}
+  margin: 0; }
 
 /* Make sure embeds and iframes fit their containers */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003538}}
 embed,
 iframe,
 object {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /* =Navigation
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003552}}
 [class*="navigation"] .nav-previous {
   float: left;
-  width: 50%;
-}
+  width: 50%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003556}}
 [class*="navigation"] .nav-next {
   float: right;
   text-align: right;
-  width: 50%;
-}
+  width: 50%; }
 
 /* =Comments
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003566}}
 .comment-content a {
-  word-wrap: break-word;
-}
+  word-wrap: break-word; }
 
 /* =Widgets
 ----------------------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003576}}
 .widget {
-  margin: 0 0 1.5em;
-}
+  margin: 0 0 1.5em; }
 
 /* Make sure select elements fit in widgets */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003581}}
 .widget select {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 /* Search widget */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003586}}
 .widget_search .search-submit {
-  display: none;
-}
+  display: none; }
 
 /* =Infinite Scroll
 ----------------------------------------------- */
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003595}}
 .infinite-scroll .paging-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
-  display: none;
-}
+  display: none; }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/_s\.scss}line{font-family:\00003601}}
 .infinity-end.neverending .site-footer {
-  display: block;
-}
+  display: block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_bits\.scss}line{font-family:\0000328}}
 .group:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\000033}}
+.back-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background: #202020;
+  color: white;
+  padding: 1em 2em; }
+  .back-to-top:active, .back-to-top:visited {
+    background: #202020;
+    color: white; }
+  .back-to-top:hover, .back-to-top:focus {
+    background: white;
+    color: #202020; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.4;
-  color: #202020;
-}
-@media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\000033}}
-  body {
-    font-size: 16px;
-  }
-}
+  color: #202020; }
+  @media (min-width: 420px) {
+    body {
+      font-size: 16px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000314}}
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000319}}
 h1 {
-  font-size: 1.3em;
-}
-@media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000319}}
-  h1 {
-    font-size: 1.5em;
-  }
-}
-@media (min-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000319}}
-  h1 {
-    font-size: 1.5em;
-  }
-}
+  font-size: 1.3em; }
+  @media (min-width: 420px) {
+    h1 {
+      font-size: 1.5em; } }
+  @media (min-width: 700px) {
+    h1 {
+      font-size: 1.5em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000331}}
 h2 {
-  font-size: 1.25em;
-}
-@media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000331}}
-  h2 {
-    font-size: 1.45em;
-  }
-}
+  font-size: 1.25em; }
+  @media (min-width: 420px) {
+    h2 {
+      font-size: 1.45em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000339}}
 h3 {
-  font-size: 1.20em;
-}
-@media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000339}}
-  h3 {
-    font-size: 1.3em;
-  }
-}
+  font-size: 1.20em; }
+  @media (min-width: 420px) {
+    h3 {
+      font-size: 1.3em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000347}}
 h4 {
-  font-size: 1.4em;
-}
+  font-size: 1.4em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000351}}
 h5 {
-  font-size: 1.1em;
-}
+  font-size: 1.1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000355}}
 h6 {
-  font-size: 1.05em;
-}
+  font-size: 1.05em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_typography\.scss}line{font-family:\0000359}}
 .logo {
   font-size: 1.3em;
   font-weight: 700;
-  letter-spacing: 2px;
-}
+  letter-spacing: 2px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_base\.scss}line{font-family:\000031}}
 body {
-  background-color: #202020;
-}
+  background-color: #202020; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_base\.scss}line{font-family:\000035}}
 [href^="mailto"]:before {
-  content: "email: ";
-}
+  content: "email: "; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_base\.scss}line{font-family:\000039}}
 html {
   box-sizing: border-box;
-  min-width: 300px;
-}
+  min-width: 300px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/base\/_base\.scss}line{font-family:\0000314}}
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\000031}}
 .page-header, .entry-header {
   background-color: #202020;
   color: white;
-  padding: 0.5em;
-}
+  padding: 0.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000313}}
 .entry-header a {
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000315}}
-.entry-header a:hover {
-  color: #202020;
-  background-color: white;
-}
+  color: white; }
+  .entry-header a:hover {
+    color: #202020;
+    background-color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000322}}
 .site-content {
   background-image: url("../img/dark_wood.png");
-  padding-bottom: 2.5em;
-}
+  padding-bottom: 2.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000327}}
 .post,
 .page-content {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   background-image: url("../img/cardboard_flat.png");
   margin: 2.5em auto;
-  max-width: 1000px;
-}
-@media (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000327}}
-  .post,
-  .page-content {
-    border: 3px solid white;
-  }
-}
+  max-width: 1000px; }
+  @media (min-width: 1000px) {
+    .post,
+    .page-content {
+      border: 3px solid white; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000341}}
 .recommended-reading .title {
-  font-style: italic;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_page\.scss}line{font-family:\0000346}}
+  font-style: italic; }
 .recommended-reading .author:before {
-  content: " -";
-}
+  content: " -"; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_blog\.scss}line{font-family:\000032}}
 .entry-title a {
   padding: 0.5em;
   display: block;
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_blog\.scss}line{font-family:\000036}}
-.entry-title a:hover {
-  color: #202020;
-  background-color: white;
-}
+  color: white; }
+  .entry-title a:hover {
+    color: #202020;
+    background-color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_blog\.scss}line{font-family:\0000313}}
 h1.entry-title {
-  padding: 0.5em;
-}
+  padding: 0.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_blog\.scss}line{font-family:\0000317}}
 .content .post-title {
   text-decoration: none;
-  border-bottom: 4px solid transparent;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_blog\.scss}line{font-family:\0000321}}
-.content .post-title:hover {
-  color: #202020;
-  background-color: transparent;
-  border-bottom-color: #202020;
-}
+  border-bottom: 4px solid transparent; }
+  .content .post-title:hover {
+    color: #202020;
+    background-color: transparent;
+    border-bottom-color: #202020; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_blog\.scss}line{font-family:\0000328}}
 .entry-content {
-  margin: 0;
-}
+  margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_header\.scss}line{font-family:\000031}}
 .logo {
   display: block;
   color: white;
-  padding: 0.3em 0 0.3em 0.3em;
-}
-@media (min-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_header\.scss}line{font-family:\000031}}
-  .logo {
-    font-size: 2em;
-  }
-}
-@media (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_header\.scss}line{font-family:\000031}}
-  .logo {
-    font-size: 2.5em;
-  }
-}
+  padding: 0.3em 0 0.3em 0.3em; }
+  @media (min-width: 700px) {
+    .logo {
+      font-size: 2em; } }
+  @media (min-width: 1000px) {
+    .logo {
+      font-size: 2.5em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_header\.scss}line{font-family:\0000315}}
 .logo-group {
   padding: 0 0 0 3.3em;
   background: url(../img/kikyo-true-white.png) no-repeat;
-  background-size: contain;
-}
+  background-size: contain; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_header\.scss}line{font-family:\0000321}}
 .site-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/honbu-wide.jpg");
   background-size: cover;
   background-position: center 28%;
   border-bottom: 3px solid white;
   padding-top: 4em;
-  padding-bottom: 3em;
-}
+  padding-bottom: 3em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_header\.scss}line{font-family:\0000330}}
 .site-branding {
   max-width: 1000px;
-  margin: auto;
-}
+  margin: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\000032}}
 .navigation a {
-  color: white;
-}
+  color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\000037}}
 .main-navigation {
-  text-align: center;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000310}}
-.main-navigation li {
-  display: inline-block;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000314}}
-.main-navigation a {
-  padding: 0.5em;
-  display: block;
-}
-@media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000314}}
+  text-align: center; }
+  .main-navigation li {
+    display: inline-block; }
   .main-navigation a {
-    padding: 1em;
-    font-size: 1em;
-  }
-}
-@media (min-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000314}}
-  .main-navigation a {
-    font-size: 1.1em;
-  }
-}
-@media (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000314}}
-  .main-navigation a {
-    font-size: 1.3em;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000332}}
-.main-navigation .current-menu-item,
-.main-navigation .current_page_item,
-.main-navigation .current-page-ancestor {
-  font-style: italic;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000338}}
-.main-navigation .menu-child-nav {
-  display: block;
-  height: 2.4em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000341}}
-.main-navigation .menu-child-nav a {
-  font-size: 1em;
-  padding: 0.5em;
-}
+    padding: 0.5em;
+    display: block; }
+    @media (min-width: 420px) {
+      .main-navigation a {
+        padding: 1em;
+        font-size: 1em; } }
+    @media (min-width: 700px) {
+      .main-navigation a {
+        font-size: 1.1em; } }
+    @media (min-width: 1000px) {
+      .main-navigation a {
+        font-size: 1.3em; } }
+  .main-navigation .current-cat,
+  .main-navigation .current-menu-item,
+  .main-navigation .current_page_item,
+  .main-navigation .current-page-ancestor {
+    font-style: italic; }
+  .main-navigation .menu-child-nav {
+    display: block;
+    height: 2.4em; }
+    .main-navigation .menu-child-nav a {
+      font-size: 1em;
+      padding: 0.5em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000349}}
 .logo {
   text-decoration: none;
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000353}}
-.logo .home-link {
-  border-bottom: 4px solid transparent;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000358}}
-.logo:hover .home-link {
-  border-bottom-color: white;
-}
+  color: white; }
+  .logo .home-link {
+    border-bottom: 4px solid transparent; }
+  .logo:hover .home-link {
+    border-bottom-color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000364}}
 .page-links {
   clear: none;
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000368}}
-.page-links a:hover {
-  color: #202020;
-  background-color: white;
-}
+  margin: 0; }
+  .page-links a:hover {
+    color: #202020;
+    background-color: white; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000374}}
 .child-nav {
-  display: inline-block;
-}
+  display: inline-block; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000395}}
 .post-navigation {
   margin: 2.5em auto;
-  max-width: 1100px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\0000399}}
-.post-navigation a {
-  padding: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_navigation\.scss}line{font-family:\00003101}}
-.post-navigation a:hover {
-  background-color: white;
-  color: #202020;
-}
+  max-width: 1100px; }
+  .post-navigation a {
+    padding: 1em; }
+    .post-navigation a:hover {
+      background-color: white;
+      color: #202020; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\000031}}
 .content {
   padding: 1em 1em;
   line-height: 2;
-  letter-spacing: 0.05em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\000036}}
-.content p {
-  text-indent: 2em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000310}}
-.content h1 {
-  font-size: 1.3em;
-  padding: 0.5em 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000315}}
-.content h2 {
-  font-size: 1.25em;
-  padding: 0.25em 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000320}}
-.content .sub-section {
-  margin-bottom: 5em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000324}}
-.content a {
-  color: #202020;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000327}}
-.content a:hover {
-  color: white;
-  background-color: #202020;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000333}}
-.content li {
-  padding: 0.25em 0;
-}
-@media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\000031}}
-  .content {
-    padding: 1em 2em;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000340}}
+  letter-spacing: 0.05em; }
+  .content p {
+    text-indent: 2em; }
   .content h1 {
-    font-size: 2em;
-    padding: 0.5em 0;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\0000345}}
+    font-size: 1.3em;
+    padding: 0.5em 0; }
   .content h2 {
-    font-size: 1.6em;
-    padding: 0.25em 0;
-  }
-}
-@media (min-width: 700px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\000031}}
-  .content {
-    padding: 1em 3.5em;
-  }
-}
-@media (min-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_content\.scss}line{font-family:\000031}}
-  .content {
-    padding: 1em 10em;
-  }
-}
+    font-size: 1.25em;
+    padding: 0.25em 0; }
+  .content .sub-section {
+    margin-bottom: 5em; }
+  .content a {
+    color: #202020; }
+    .content a:hover {
+      color: white;
+      background-color: #202020; }
+  .content li {
+    padding: 0.25em 0; }
+  @media (min-width: 420px) {
+    .content {
+      padding: 1em 2em; }
+      .content h1 {
+        font-size: 2em;
+        padding: 0.5em 0; }
+      .content h2 {
+        font-size: 1.6em;
+        padding: 0.25em 0; } }
+  @media (min-width: 700px) {
+    .content {
+      padding: 1em 3.5em; } }
+  @media (min-width: 1000px) {
+    .content {
+      padding: 1em 10em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_footer\.scss}line{font-family:\000031}}
 .site-footer {
   color: white;
   background-color: #202020;
-  width: 100%;
   border-top: 0.2em solid white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_footer\.scss}line{font-family:\000037}}
-.site-footer a {
-  color: white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/parts\/_footer\.scss}line{font-family:\0000310}}
-.site-footer a:hover {
-  background-color: white;
-  color: #202020;
-}
+  padding: 4em 0; }
+  .site-footer a {
+    color: white; }
+    .site-footer a:hover {
+      background-color: white;
+      color: #202020; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/components\/_lineage\.scss}line{font-family:\000032}}
+.site-info {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center; }
+  .site-info ul {
+    list-style: none;
+    margin: 0;
+    display: block;
+    margin: 2.5em 0; }
+    @media (min-width: 605px) {
+      .site-info ul {
+        text-align: left;
+        float: left;
+        width: 25%; } }
+    .site-info ul li {
+      display: inline-block;
+      width: 100%; }
+    .site-info ul a {
+      padding: 1em 2em;
+      margin: 0 0 1em 0;
+      display: inline-block; }
+
 .lineage li {
-  padding: 0.5em 0;
-}
+  padding: 0.5em 0; }
 
 @media (min-width: 420px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/components\/_student-listing\.scss}line{font-family:\000034}}
   .student-listing .column-2 {
     float: left;
-    width: 48%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/components\/_student-listing\.scss}line{font-family:\0000310}}
+    width: 48%; } }
 .student-listing:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/wp-content\/themes\/ustri-2014\/scss\/components\/_instructor\.scss}line{font-family:\000031}}
 .instructor-card {
-  padding: 1em;
-}
+  padding: 1em; }
 
 /*# sourceMappingURL=global.css.map */
